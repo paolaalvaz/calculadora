@@ -76,7 +76,7 @@
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Component id="btnSiete" min="-2" max="-2" attributes="0"/>
                                           <Component id="btnTres" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="btnSumaResta" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnMasMenos" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" attributes="0">
@@ -135,7 +135,7 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnCuadrado" min="-2" pref="68" max="-2" attributes="0"/>
+                      <Component id="btnCubo" min="-2" pref="68" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="btnCuadradoY" min="-2" pref="68" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
@@ -170,7 +170,7 @@
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="btnCuadrado" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="btnCubo" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="btnCuadradoY" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="btnCuadradoY1" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="btnSeno1" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
@@ -183,7 +183,7 @@
                   <Component id="btnAHexodecimal" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                       <Component id="btnCoseno" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="btnSumaResta" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="btnMasMenos" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="btnPunto" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="btnNueve" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="btnOcho" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
@@ -310,7 +310,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnIgualActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnCuadrado">
+    <Component class="javax.swing.JButton" name="btnCubo">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="99" red="ff" type="rgb"/>
@@ -318,7 +318,7 @@
         <Property name="text" type="java.lang.String" value="X^2"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCuadradoActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCuboActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnCuadradoY">
@@ -350,6 +350,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="COS"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCosenoActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnSeno1">
       <Properties>
@@ -358,6 +361,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="SEN"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSeno1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnTangente">
       <Properties>
@@ -366,6 +372,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="TAN"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTangenteActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="btnABinario">
       <Properties>
@@ -414,6 +423,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="c"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnOcho">
       <Properties>
@@ -444,14 +456,20 @@
         </Property>
         <Property name="text" type="java.lang.String" value="."/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPuntoActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnSumaResta">
+    <Component class="javax.swing.JButton" name="btnMasMenos">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="66" red="ff" type="rgb"/>
+          <Color blue="66" green="ff" red="66" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="+  -"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMasMenosActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnCuatro">
       <Properties>
@@ -512,6 +530,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Ce"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCeActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnLineal">
       <Properties>

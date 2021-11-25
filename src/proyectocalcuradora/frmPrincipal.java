@@ -38,7 +38,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnPorcentaje = new javax.swing.JButton();
         btnRaiz = new javax.swing.JButton();
         btnIgual = new javax.swing.JButton();
-        btnCuadrado = new javax.swing.JButton();
+        btnCubo = new javax.swing.JButton();
         btnCuadradoY = new javax.swing.JButton();
         btnCuadradoY1 = new javax.swing.JButton();
         btnCoseno = new javax.swing.JButton();
@@ -53,7 +53,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnOcho = new javax.swing.JButton();
         btnNueve = new javax.swing.JButton();
         btnPunto = new javax.swing.JButton();
-        btnSumaResta = new javax.swing.JButton();
+        btnMasMenos = new javax.swing.JButton();
         btnCuatro = new javax.swing.JButton();
         btnCinco = new javax.swing.JButton();
         btnSeis = new javax.swing.JButton();
@@ -131,11 +131,11 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnCuadrado.setBackground(new java.awt.Color(255, 153, 51));
-        btnCuadrado.setText("X^2");
-        btnCuadrado.addActionListener(new java.awt.event.ActionListener() {
+        btnCubo.setBackground(new java.awt.Color(255, 153, 51));
+        btnCubo.setText("X^2");
+        btnCubo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCuadradoActionPerformed(evt);
+                btnCuboActionPerformed(evt);
             }
         });
 
@@ -157,12 +157,27 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnCoseno.setBackground(new java.awt.Color(0, 204, 153));
         btnCoseno.setText("COS");
+        btnCoseno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCosenoActionPerformed(evt);
+            }
+        });
 
         btnSeno1.setBackground(new java.awt.Color(0, 204, 153));
         btnSeno1.setText("SEN");
+        btnSeno1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSeno1ActionPerformed(evt);
+            }
+        });
 
         btnTangente.setBackground(new java.awt.Color(0, 204, 153));
         btnTangente.setText("TAN");
+        btnTangente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTangenteActionPerformed(evt);
+            }
+        });
 
         btnABinario.setText("A Binario");
         btnABinario.addActionListener(new java.awt.event.ActionListener() {
@@ -193,6 +208,11 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnC.setBackground(new java.awt.Color(255, 255, 0));
         btnC.setText("c");
+        btnC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCActionPerformed(evt);
+            }
+        });
 
         btnOcho.setBackground(new java.awt.Color(255, 102, 255));
         btnOcho.setText("8");
@@ -212,9 +232,19 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnPunto.setBackground(new java.awt.Color(255, 102, 255));
         btnPunto.setText(".");
+        btnPunto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPuntoActionPerformed(evt);
+            }
+        });
 
-        btnSumaResta.setBackground(new java.awt.Color(255, 102, 255));
-        btnSumaResta.setText("+  -");
+        btnMasMenos.setBackground(new java.awt.Color(102, 255, 102));
+        btnMasMenos.setText("+  -");
+        btnMasMenos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMasMenosActionPerformed(evt);
+            }
+        });
 
         btnCuatro.setBackground(new java.awt.Color(255, 102, 255));
         btnCuatro.setText("4");
@@ -253,6 +283,11 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnCe.setBackground(new java.awt.Color(255, 255, 0));
         btnCe.setText("Ce");
+        btnCe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCeActionPerformed(evt);
+            }
+        });
 
         btnLineal.setBackground(new java.awt.Color(204, 153, 255));
         btnLineal.setText("X!");
@@ -330,7 +365,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(btnSiete)
                                             .addComponent(btnTres)
-                                            .addComponent(btnSumaResta))
+                                            .addComponent(btnMasMenos))
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(28, 28, 28)
@@ -374,7 +409,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                                 .addGap(17, 17, 17))))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(btnCuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnCubo, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnCuadradoY, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)
@@ -402,7 +437,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnCuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnCubo, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnCuadradoY, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnCuadradoY1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnSeno1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -413,7 +448,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                     .addComponent(btnAHexodecimal)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(btnCoseno, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnSumaResta, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnMasMenos, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnPunto, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnNueve, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnOcho, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -464,16 +499,16 @@ public class frmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPorcentajeActionPerformed
 
     private void btnRaizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRaizActionPerformed
-        // TODO add your handling code here:
+        txtResultados.setText(String.valueOf(Math.sqrt(Double.parseDouble(txtResultados.getText()))));
     }//GEN-LAST:event_btnRaizActionPerformed
 
     private void btnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIgualActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnIgualActionPerformed
 
-    private void btnCuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuadradoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCuadradoActionPerformed
+    private void btnCuboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuboActionPerformed
+        txtResultados.setText(String.valueOf(Math.pow(Double.parseDouble(txtResultados.getText()), 2)));  
+    }//GEN-LAST:event_btnCuboActionPerformed
 
     private void btnCuadradoYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuadradoYActionPerformed
         // TODO add your handling code here:
@@ -539,6 +574,38 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnAHexodecimal.setSelected(false);
         btnAHexodecimal.setSelected(false);
     }//GEN-LAST:event_btnAOctalActionPerformed
+
+    private void btnPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPuntoActionPerformed
+        txtResultados.append(".");
+    }//GEN-LAST:event_btnPuntoActionPerformed
+
+    private void btnSeno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeno1ActionPerformed
+        txtResultados.setText(String.valueOf(Math.sin(Math.toRadians(Double.parseDouble(txtResultados.getText())))));  
+    }//GEN-LAST:event_btnSeno1ActionPerformed
+
+    private void btnCosenoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCosenoActionPerformed
+        txtResultados.setText(String.valueOf(Math.cos(Math.toRadians(Double.parseDouble(txtResultados.getText())))));  
+    }//GEN-LAST:event_btnCosenoActionPerformed
+
+    private void btnTangenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTangenteActionPerformed
+        txtResultados.setText(String.valueOf(Math.tan(Math.toRadians(Double.parseDouble(txtResultados.getText())))));  
+    }//GEN-LAST:event_btnTangenteActionPerformed
+
+    private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
+        String valor = txtResultados.getText();
+        txtResultados.setText(valor.substring(0, valor.length() -1 ));
+    }//GEN-LAST:event_btnCActionPerformed
+
+    private void btnCeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCeActionPerformed
+        txtResultados.setText(" ");
+    }//GEN-LAST:event_btnCeActionPerformed
+
+    private void btnMasMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMasMenosActionPerformed
+        String val = txtResultados.getText();
+        double n = Double.parseDouble(val);
+        n = n * -1;
+        txtResultados.setText(String.valueOf(n));
+    }//GEN-LAST:event_btnMasMenosActionPerformed
      
     /**
      * @param args the command line arguments
@@ -585,16 +652,17 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnCero;
     private javax.swing.JButton btnCinco;
     private javax.swing.JButton btnCoseno;
-    private javax.swing.JButton btnCuadrado;
     private javax.swing.JButton btnCuadradoY;
     private javax.swing.JButton btnCuadradoY1;
     private javax.swing.JButton btnCuatro;
+    private javax.swing.JButton btnCubo;
     private javax.swing.JButton btnDivivcion;
     private javax.swing.JButton btnDos;
     private javax.swing.JButton btnIgual;
     private javax.swing.JButton btnIn;
     private javax.swing.JButton btnLineal;
     private javax.swing.JButton btnLog;
+    private javax.swing.JButton btnMasMenos;
     private javax.swing.JButton btnMultiplicacion;
     private javax.swing.JButton btnNueve;
     private javax.swing.JButton btnOcho;
@@ -606,7 +674,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnSeno1;
     private javax.swing.JButton btnSiete;
     private javax.swing.JButton btnSuma;
-    private javax.swing.JButton btnSumaResta;
     private javax.swing.JButton btnTangente;
     private javax.swing.JButton btnTres;
     private javax.swing.JButton btnUno;
