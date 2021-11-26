@@ -11,6 +11,9 @@ package proyectocalcuradora;
  * @author 20PROGB06
  */
 public class frmPrincipal extends javax.swing.JFrame {
+    
+    private double valor1 = 0;
+    private String operacion = null;
 
     /**
      * Creates new form frmPrincipal
@@ -47,8 +50,8 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnABinario = new javax.swing.JRadioButton();
         btnAHexodecimal = new javax.swing.JRadioButton();
         btnAOctal = new javax.swing.JRadioButton();
-        btnIn = new javax.swing.JButton();
-        btnLog = new javax.swing.JButton();
+        btnLognat = new javax.swing.JButton();
+        btnLogaritmo = new javax.swing.JButton();
         btnC = new javax.swing.JButton();
         btnOcho = new javax.swing.JButton();
         btnNueve = new javax.swing.JButton();
@@ -123,7 +126,7 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnIgual.setBackground(new java.awt.Color(204, 153, 255));
+        btnIgual.setBackground(new java.awt.Color(255, 0, 51));
         btnIgual.setText("=");
         btnIgual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -200,11 +203,11 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnIn.setBackground(new java.awt.Color(255, 153, 0));
-        btnIn.setText("in");
+        btnLognat.setBackground(new java.awt.Color(255, 153, 0));
+        btnLognat.setText("Ln");
 
-        btnLog.setBackground(new java.awt.Color(255, 153, 0));
-        btnLog.setText("log");
+        btnLogaritmo.setBackground(new java.awt.Color(255, 153, 0));
+        btnLogaritmo.setText("log");
 
         btnC.setBackground(new java.awt.Color(255, 255, 0));
         btnC.setText("c");
@@ -376,8 +379,8 @@ public class frmPrincipal extends javax.swing.JFrame {
                                     .addComponent(btnTangente, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnLog, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnIn, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnLogaritmo, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnLognat, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(btnC, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(34, 34, 34))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -441,7 +444,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                         .addComponent(btnCuadradoY, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnCuadradoY1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnSeno1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnIn, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnLognat, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(btnABinario))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -452,7 +455,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                         .addComponent(btnPunto, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnNueve, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnOcho, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnLog, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnLogaritmo, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(btnAOctal, javax.swing.GroupLayout.Alignment.LEADING)
@@ -479,23 +482,34 @@ public class frmPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumaActionPerformed
-        // TODO add your handling code here:
+        valor1 = Double.parseDouble(txtResultados.getText());
+        txtResultados.setText("");
+        operacion = "suma";
     }//GEN-LAST:event_btnSumaActionPerformed
 
     private void btnRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaActionPerformed
-        // TODO add your handling code here:
+        valor1 = Double.parseDouble(txtResultados.getText());
+        txtResultados.setText("");
+        operacion = "resta";
     }//GEN-LAST:event_btnRestaActionPerformed
 
     private void btnMultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicacionActionPerformed
-        // TODO add your handling code here:
+        valor1 = Double.parseDouble(txtResultados.getText());
+        txtResultados.setText("");
+        operacion = "multiplicacion";
     }//GEN-LAST:event_btnMultiplicacionActionPerformed
 
     private void btnDivivcionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivivcionActionPerformed
-        // TODO add your handling code here:
+        valor1 = Double.parseDouble(txtResultados.getText());
+        txtResultados.setText("");
+        operacion = "divicion";
     }//GEN-LAST:event_btnDivivcionActionPerformed
 
     private void btnPorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPorcentajeActionPerformed
-        // TODO add your handling code here:
+        valor1 = Double.parseDouble(txtResultados.getText());
+        valor1 = valor1/100;
+        txtResultados.setText("");
+        operacion = "porcentaje";
     }//GEN-LAST:event_btnPorcentajeActionPerformed
 
     private void btnRaizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRaizActionPerformed
@@ -503,7 +517,27 @@ public class frmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRaizActionPerformed
 
     private void btnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIgualActionPerformed
-        // TODO add your handling code here:
+        double valor2 =  Double.parseDouble(txtResultados.getText());
+        switch(operacion);
+        {
+            case "suma":
+                txtResultados.setText(String.valueOf(valor1+valor2));
+                break;
+            case "resta":
+                txtResultados.setText(String.valueOf(valor1-valor2));
+                break;
+            case "multiplicacion":
+                txtResultados.setText(String.valueOf(valor1*valor2));
+                break;
+            case "divicion":
+                if(valor2=0){
+                    txtResultados.setText("Error");
+                }else{
+                    txtResultados.setText(String.valueOf(valor1/valor2));
+                }
+                break:
+            
+        }
     }//GEN-LAST:event_btnIgualActionPerformed
 
     private void btnCuboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuboActionPerformed
@@ -659,9 +693,9 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnDivivcion;
     private javax.swing.JButton btnDos;
     private javax.swing.JButton btnIgual;
-    private javax.swing.JButton btnIn;
     private javax.swing.JButton btnLineal;
-    private javax.swing.JButton btnLog;
+    private javax.swing.JButton btnLogaritmo;
+    private javax.swing.JButton btnLognat;
     private javax.swing.JButton btnMasMenos;
     private javax.swing.JButton btnMultiplicacion;
     private javax.swing.JButton btnNueve;

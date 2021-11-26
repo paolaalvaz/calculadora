@@ -93,8 +93,8 @@
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="btnLog" min="-2" pref="53" max="-2" attributes="0"/>
-                                  <Component id="btnIn" min="-2" pref="53" max="-2" attributes="0"/>
+                                  <Component id="btnLogaritmo" min="-2" pref="53" max="-2" attributes="0"/>
+                                  <Component id="btnLognat" min="-2" pref="53" max="-2" attributes="0"/>
                                   <Component id="btnC" alignment="0" min="-2" pref="53" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
@@ -174,7 +174,7 @@
                       <Component id="btnCuadradoY" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="btnCuadradoY1" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="btnSeno1" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="btnIn" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="btnLognat" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                   </Group>
                   <Component id="btnABinario" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
@@ -187,7 +187,7 @@
                       <Component id="btnPunto" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="btnNueve" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="btnOcho" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="btnLog" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="btnLogaritmo" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -302,7 +302,7 @@
     <Component class="javax.swing.JButton" name="btnIgual">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="cc" type="rgb"/>
+          <Color blue="33" green="0" red="ff" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="="/>
       </Properties>
@@ -400,15 +400,15 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAOctalActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnIn">
+    <Component class="javax.swing.JButton" name="btnLognat">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="99" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="in"/>
+        <Property name="text" type="java.lang.String" value="Ln"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnLog">
+    <Component class="javax.swing.JButton" name="btnLogaritmo">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="99" red="ff" type="rgb"/>
